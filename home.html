@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Myself</title>
+</head>
+<body class="two">
+    <link rel="stylesheet" href="calcu.css">
+    <header>
+        <nav class="two">
+                <li><a href="#mytable">Autobiography</a></li>
+                <li><a href="#mytable2">Fun Facts</a></li>
+                <li><a href="#mytable3">Dreams</a></li>
+                <li><a href="#mytable4">Motto in Life</a></li>
+                <li><a button class="logout" onclick="location.href='intro.html';">Log out</button></a></li>
+        </nav>
+    </header>
+
+    <div class="slides">
+        <img class="mySlides" src="kin1.jpg" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <img class="mySlides" src="kin2.jpg" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <img class="mySlides" src="kin3.jpg" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <img class="mySlides" src="kin4.jpg" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <img class="mySlides" src="kin5.jpg" style="width:70%; margin-left: auto; margin-right: auto;">
+        <img class="mySlides" src="kin7.jpg" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <img class="mySlides" src="kin8.jpg" style="width: 70%; margin-left: auto; margin-right: auto;">
+        <img class="mySlides" src="kin9.jpg" style="width: 70%; margin-left: auto; margin-right: auto;">
+        
+    </div>
+
+   <fieldset id="info">
+    <p class="hometype typer"><b>Hi! My name is Kin James Ramirez from 1F-G1 and this is my creative way of introducing myself✨</b></p>
+   </fieldset>
+   <table id="mytable" class="tbl";>
+        <caption class="cap"><b>Autobiography</b></caption>
+            <tr>
+                <td><b>Name</b></td>
+                <td>Kin James M. Ramirez</td>
+            </tr>
+            <tr>
+                <td><b>Nickname</b></td>
+                <td>Kenj</td>
+            </tr>
+            <tr>
+                <td><b>Birthday</b></td>
+                <td>March 20, 2004</td>
+            </tr>
+            <tr>
+                <td><b>Age</b></td>
+                <td>18 years old</td>
+            </tr>
+            <tr>
+                <td><b>Zodiac Sign</b></td>
+                <td>Pisces♓</td>
+            </tr>
+            <tr>
+                <td><b>Hobbies</b></td>
+                <td>Basketball🏀</td>
+            </tr>
+            <tr>
+            <td><b>Dream Job</b></td>
+                <td>Web Developer/Owner of multiple business</td>
+        </tr>
+   </table>
+   <table id="mytable2" class="tbl2">
+        <caption class="cap2"><b>Fun Facts</b></caption>
+            <tr>
+                <td>Loves to Sleep😴 & Eat🍔.</td>
+            </tr>
+            <tr>
+                <td>Playing computer games relieve my stress.</td>
+            </tr>
+            <tr>
+                <td>I love dogs🐶</td>
+            </tr>
+            <tr>
+                <td>I'm an extrovert, it's easy for me to make friends👪.</td>
+            </tr>
+            <tr>
+                <td>I'm a carbon copy of my father👨‍👦</td>
+            </tr>
+   </table>
+
+   <section id="mytable3" class="tbl3">
+    <h2 id="cap3"><b>Dreams</b></h2>       
+        <p>I'm pursuing a Bachelor of Science in Information Technology at Bulacan State University's Malolos Campus. I'm a student who wants to work as a web developer in Switzerland, which is one of my travel destinations of choice. But as a person and the firstborn of my parents, I want to make them proud of me and see them stand up and cheer when I succeed. I hope to achieve enough success to provide for my family. The reason why I enroll this subject is because I am curious about the history of every famous artwork and what are the history behind them.</p>    
+   </section>
+        <footer id="mytable4" class="tbl4">
+            <nav>
+            <img class="footer-logo" src="kinbg2.png">
+            </nav>
+        </footer>
+   <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}    
+        x[myIndex-1].style.display = "block";  
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>
